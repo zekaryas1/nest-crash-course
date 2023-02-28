@@ -1,5 +1,4 @@
 import { IsString } from "class-validator";
-import { Flavor } from "../entity/flavor.entity";
 
 export class CreateCoffeDto {
 

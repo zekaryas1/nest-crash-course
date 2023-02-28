@@ -8,6 +8,7 @@ import {
   Post,
   Query
 } from '@nestjs/common';
+import { PaginationDTO } from 'src/commons/dto/Pagination.dto';
 import { CoffesService } from './coffes.service';
 import { CreateCoffeDto } from './dto/create-coffe.dto';
 import { UpdateCoffeDto } from './dto/update-coffe.dto';
@@ -17,8 +18,8 @@ export class CoffesController {
   constructor(private readonly coffesService: CoffesService) {}
 
   @Get()
-  findAll(@Query() paginationQuery) {
-    return this.coffesService.findAll();
+  findAll(@Query() paginationQuery: PaginationDTO) {
+    return this.coffesService.findAll(paginationQuery);
   }
 
   @Get(':id')
@@ -28,8 +29,7 @@ export class CoffesController {
 
   @Post()
   create(@Body() body: CreateCoffeDto) {
-    this.coffesService.create(body);
-    return body;
+    return this.coffesService.create(body);;
   }
 
   @Patch(':id')
