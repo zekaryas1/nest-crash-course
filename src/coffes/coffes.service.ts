@@ -1,9 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { UpdateCoffeDto } from './dto/update-coffe.dto';
 import { CoffeType } from './entity/coffe.entity';
 
 @Injectable()
 export class CoffesService {
-  private coffes: CoffeType[] = [
+  private coffes: UpdateCoffeDto[] = [
     {
       id: 1,
       name: 'Cafe A',
