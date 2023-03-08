@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PaginationDTO } from 'src/commons/dto/Pagination.dto';
+import { PaginationDTO } from 'src/common/dto/Pagination.dto';
 import { DataSource, Repository } from 'typeorm';
 import { CreateCoffeDto } from './dto/create-coffe.dto';
 import { UpdateCoffeDto } from './dto/update-coffe.dto';
