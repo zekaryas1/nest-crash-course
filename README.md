@@ -25,7 +25,7 @@
 
 ## Introduction
 
-- The project is based on the offcial course from Next.js authors - https://courses.nestjs.com/
+- The project is based on the official course from Nest.js authors - https://courses.nestjs.com/
 - The project is organized with different branch
   - [Api and validation ex](https://github.com/zekaryas1/nest-crash-course/tree/api-and-validation)
   - [Swagger for API documentation](https://github.com/zekaryas1/nest-crash-course/tree/swagger-ui)
