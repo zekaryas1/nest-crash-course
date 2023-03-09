@@ -22,6 +22,17 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+
+## Introduction
+
+- The project is based on the offcial course from Next.js authors - https://courses.nestjs.com/
+- The project is organized with different branch
+  - [Api and validation ex](https://github.com/zekaryas1/nest-crash-course/tree/api-and-validation)
+  - [Swagger for API documentation](https://github.com/zekaryas1/nest-crash-course/tree/swagger-ui)
+  - [Database with Typeorm and postgres](https://github.com/zekaryas1/nest-crash-course/tree/postgreSQL)
+  - [Building block such Guards, interceptor...](https://github.com/zekaryas1/nest-crash-course/tree/building-blocks)
+  - [e2e testing with Jest](https://github.com/zekaryas1/nest-crash-course/tree/e2e-testing)
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
