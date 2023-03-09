@@ -29,11 +29,13 @@ export class CoffesService {
   create(newCoffe) {
     newCoffe.id = Math.floor(Math.random() * 100);
     this.coffes.push(newCoffe);
+    return newCoffe;;
   }
 
   update(id: string, coffeDto) {
     const index = this.coffes.findIndex((c) => c.id === +id);
     this.coffes[index] = coffeDto;
+    return this.coffes[index];
   }
 
   remove(id: string) {

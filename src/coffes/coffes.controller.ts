@@ -3,6 +3,8 @@ import {
   Controller,
   Delete,
   Get,
+  HttpCode,
+  HttpStatus,
   Param,
   Patch,
   Post,
@@ -36,8 +38,7 @@ export class CoffesController {
 
   @Post()
   create(@Body() body: CreateCoffeDto) {
-    this.coffesService.create(body);
-    return body;
+    return this.coffesService.create(body);
   }
 
   @Patch(':id')
@@ -46,6 +47,11 @@ export class CoffesController {
   }
 
   @Delete(':id')
+  @ApiResponse({
+    status: HttpStatus.NO_CONTENT,
+    description: 'The record has been successfully deleted.',
+  })
+  @HttpCode(HttpStatus.NO_CONTENT)
   remote(@Param('id') id: string) {
     return this.coffesService.remove(id);
   }
